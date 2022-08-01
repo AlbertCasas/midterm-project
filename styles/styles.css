@@ -1,0 +1,580 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+
+
+html {
+    background-color: #F4F6FC;
+    font-family: Roboto;
+    font-weight: 500;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    padding: 0 20%;
+}
+
+header {
+    height: 11rem;
+    margin-bottom: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-ul {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.nav-ul li {
+    padding: 0 1rem;
+    list-style-type: none;
+}
+
+.nav-ul a {
+    text-decoration: none;
+    font-weight: 700
+}
+
+.nav-ul a:hover {
+    color: #072AC8;
+}
+
+.home {
+    color: #3F84F3;
+}
+
+.no-home {
+    color: #6B708D;
+}
+
+.contact-us {
+    background-color: #072AC8;
+    padding: 1rem 2rem;
+    
+}
+
+
+.contact-us:hover {
+    cursor: pointer;
+    background-color: #292E47;
+}
+
+.contact-us a {
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+}
+
+#empower {
+    width: 65rem;
+    height: 35rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.empower-text {
+    width: 50%;
+    height: 20rem;
+    padding-top: 2rem;
+}
+
+.empower-h1 {
+    font-size: 2.5rem;
+    color: #292E47;
+    
+}
+
+.empower-p {
+    font-size: 1.3rem;
+    color: #6B708D;
+    font-weight: 500;
+    margin-bottom: 4rem;
+    font-weight: 500;
+}
+
+.see-work {
+    color: #6B708D;
+    text-decoration: none;
+    font-size: 1.2rem;
+    margin-right: 1rem;
+    font-weight: 500;
+}
+
+.get-touch {
+    background-color: #072AC8;
+    color: white;
+    text-decoration: none;
+    padding: 15px 36px;
+    font-size: 1.2rem;
+}
+
+.empower-imgs {
+    width: 50%;
+    height: 20rem;
+    display: flex;
+    position: relative;
+}
+
+.empower-img1 img{
+    position: absolute;
+    right: 310px;
+    top: 0%;
+    bottom: auto;
+    max-width: 300px;
+}
+
+
+
+.empower-img2 img{
+    width: 35rem;
+}
+
+.empower-img3 img{
+    position: absolute;
+    left: auto;
+    top: auto;
+    right: -33%;
+    bottom: -28rem;
+    max-width: 300px;
+}
+
+#logos {
+    display: flex;
+    justify-content: space-between;
+    padding: 17rem 0 15rem 0;
+
+}
+
+#projects {
+    height: 40rem;
+    margin-bottom: 7rem;
+}
+
+.section-title {
+    color: #292E47;
+    font-size: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+    background-color: white;
+    width: 340px;
+    height: 440px;
+}
+
+.card img {
+    width: 100%;
+    height: 15rem;
+}
+
+.card-text {
+    padding-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+}
+
+.card-text h3 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #292E47;
+}
+
+.card-text p {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.card-text a {
+    text-decoration: none;
+    color: #072AC8;
+}
+
+#clients {
+    width: 115%;
+    height: 37rem;
+    background-color: #292E47;
+    position: relative;
+    align-self: center;
+}
+
+.clients-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 32rem;
+}
+
+.clients-text h2 {
+    color: white;
+    font-size: 2.6rem;
+    padding-top: 1rem;
+}
+
+.clients-text p {
+    color: #FFC600;
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 160%;
+    text-align: center;
+}
+
+.kristin {
+    display: flex;
+}
+
+.kristin-img {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background-image: url("https://uploads-ssl.webflow.com/61f7ff5634c23c5bef9d2e54/61f800d1117d92108a29dcdc_Profile.png");
+    background-position: center;
+    background-size: 4rem;
+}
+
+.kristin-text {
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem 1rem;
+
+}
+
+.kristin-text-name {
+    color: #9BD6E9;
+}
+
+.kristin-text-site {
+    color: white;
+    font-size: 0.8rem;
+}
+
+.emote img {
+    width: 9rem;
+    position: absolute;
+}
+
+.emote-1 img {
+    left: 6rem;
+    top: 4rem;
+}
+
+.emote-2 img {
+    right: 6rem;
+    top: 4rem;
+}
+
+.emote-3 img {
+    left: 6rem;
+    bottom: 4rem;
+}
+
+.emote-4 img {
+    right: 6rem;
+    bottom: 4rem;
+}
+
+
+.elipse1 {
+    width: 40rem;
+    height: 40rem;
+    background-color: transparent;
+    border: 2px dashed #f4f6fc13;
+    border-radius: 50%;
+    position: absolute;
+    left: 20rem;
+    top: -1rem;
+}
+
+.elipse2 {
+    width: 55rem;
+    height: 55rem;
+    background-color: transparent;
+    border: 2px dashed #f4f6fc13;
+    border-radius: 50%;
+    position: absolute;
+    left: 13rem;
+    top: -9rem;
+    
+}
+
+.elipse3 {
+    width: 70rem;
+    height: 70rem;
+    background-color: transparent;
+    border: 2px dashed #f4f6fc13;
+    border-radius: 50%;
+    position: absolute;
+    left: 5.5rem;
+    top: -16rem;
+    
+} 
+
+#services {
+    margin: 7rem 0;
+}
+
+.services-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.services-card {
+    background-color: white;
+    width: 20rem;
+    height: 22rem;
+}
+
+.icon {
+    margin: 2rem;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    background-color: #F4F6FC;
+    display: flex;
+    justify-content: center;
+}
+
+.icon img {
+    width: 2.5rem;
+}
+
+.services-card p {
+    height: 3.5rem;
+}
+
+.services-card a {
+    padding-top: .8rem;
+}
+
+#questions {
+    width: 115%;
+    height: 30rem;
+    background-color: #FFC600;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 7rem;
+}
+
+.questions-text {
+    line-height: 1rem;
+    padding-top: 3rem;
+}
+
+.questions-text h2 {
+    font-size: 2.5rem;
+    color: #292E47;
+}
+
+.questions-text p {
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #6B708D;
+}
+
+.questions-form {
+    padding-bottom: 3rem;
+    width: 40rem;
+}
+
+.questions-form form{
+    display: flex;
+    justify-content: center;
+}
+
+.input-background {
+    width: 27rem;
+    height: 4rem;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    margin-right: 2rem;
+    border: 1px #cccccc solid;
+}
+
+
+
+.input-background img {
+    width: 2rem;
+    padding: 0 0.8rem 0 1.5rem;
+}
+
+.email-input {
+    height: 3.6rem;
+    width: 23rem;
+    border: none;
+    align-self: flex-end;
+    background-color: transparent;
+}
+
+.email-input::placeholder {
+    color: black;
+    font-size: 1rem;
+}
+
+.email-input:focus {
+    outline: none;
+    
+}
+
+.submit-input {
+    padding: 1.48rem 2.8rem;
+    border: none;
+    background-color: #072AC8;
+    color: white;
+    font-weight: 600;
+}
+
+footer {
+    display: flex;
+    height: 5rem;
+    justify-content: space-between;
+    margin-bottom: 7rem;
+}
+
+.footer-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer-info img {
+    width: 6rem;
+}
+
+.footer-info address {
+    color: #6B708D;
+    font-size: 1rem;
+    font-weight: 400;
+    width: 15rem;
+    padding-top: 2.5rem;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.link-set {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.link-set li {
+    padding: 0 1rem;
+    list-style-type: none;
+}
+
+.link-set a {
+    text-decoration: none;
+    color: #072AC8;
+}
+
+#contact-form {
+    margin-bottom: 10rem;
+}
+
+#contact-form input {
+    height: 3.9rem;
+    background-color: #E4E6F0;
+    border: none;
+    margin-bottom: 1.3rem;
+}
+
+#contact-form input::placeholder {
+    font-size: 1rem;
+    color: #6B708D;
+    padding-left: 1.3rem;
+}
+
+#contact-form textarea {
+    height: 12rem;
+    background-color: #E4E6F0;
+    border: none;
+    margin-bottom: 1.3rem;
+}
+
+#contact-form textarea::placeholder {
+    font-size: 1rem;
+    color: #6B708D;
+    padding-left: 1.3rem;
+    padding-top: 0.6rem;
+}
+
+#contact-form input:focus {
+    outline: none;
+}
+
+#contact-form textarea:focus {
+    outline: none;
+}
+
+#contact-form label {
+    color: #6B708D;
+    font-size: 1.3rem;
+    font-weight: 400;
+    padding: 0.4rem 0;
+}
+
+#contact-form button {
+    width: 100%;
+    height: 5rem;
+    background-color: #072AC8;
+    color: white;
+    font-size: 1.1rem;
+    border: none;
+}
+
+#contact-form button:hover {
+    cursor: pointer;
+    background-color: #292e47;
+}
+
+.contact-title {
+    font-size: 2.5rem;
+    color: #292E47;
+    margin-bottom: 4.2rem;
+}
+
+.full-name-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.mail-phone {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.email-form {
+    display: flex;
+    flex-direction: column;
+    width: 49%;
+}
+
+.phone-form {
+    display: flex;
+    flex-direction: column;
+    width: 49%;
+}
+
+.message-form {
+    display: flex;
+    flex-direction: column;
+}
+

@@ -481,6 +481,7 @@ footer {
 .link-set a {
     text-decoration: none;
     color: #072AC8;
+    justify-self: left;
 }
 
 #contact-form {

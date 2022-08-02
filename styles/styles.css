@@ -16,7 +16,7 @@ html {
 
 header {
     height: 11rem;
-    margin-bottom: 5rem;
+    margin-bottom: 3rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -484,6 +484,8 @@ footer {
     justify-self: left;
 }
 
+/* Contact Us Page */
+
 #contact-form {
     margin-bottom: 10rem;
 }
@@ -578,4 +580,72 @@ footer {
     display: flex;
     flex-direction: column;
 }
+
+/* Projects Page */
+
+#big-project h1{
+    font-size: 3.9rem;
+    color: #292E47;
+    margin: 0.5rem 0 0.1rem 0;
+}
+
+.project-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2.5rem;
+}
+
+.project-info h2 {
+    color: #6B708D;
+    font-size: 1.35rem;
+}
+
+.project-info p {
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+.project-info span {
+    color: #6B708D;
+}
+
+.big-img {
+    width: 100%;
+    height: 30rem;
+    margin-bottom: 1rem;
+    object-fit: cover;
+    margin-bottom: 5rem;
+    position: relative;
+}
+
+.cover-img {
+    width: 100%;
+    height: 30rem;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.blurred-img {
+    width: 100%;
+    height: 30rem;
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    top: 0;
+    opacity: 0.4;
+    filter: saturate(200%) blur(3rem);
+}
+
+.project-text {
+    height: 20rem;
+    margin-bottom: 5rem;
+}
+
+.project-text p {
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 2rem;
+}
+
+/* Media querys */
 

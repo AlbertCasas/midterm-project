@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
 
 
-
 html {
     background-color: #F4F6FC;
     font-family: Roboto;
@@ -220,6 +219,10 @@ header {
     padding-top: 1rem;
 }
 
+.clients-p {
+    width: 45%;
+}
+
 .clients-text p {
     color: #FFC600;
     font-size: 1.5rem;
@@ -282,6 +285,17 @@ header {
     bottom: 4rem;
 }
 
+.elipse0 {
+    width: 20rem;
+    height: 20rem;
+    background-color: transparent;
+    border: 2px dashed #f4f6fc13;
+    border-radius: 50%;
+    position: absolute;
+    left: 20rem;
+    top: -1rem;
+    display: none;
+}
 
 .elipse1 {
     width: 40rem;
@@ -649,3 +663,364 @@ footer {
 
 /* Media querys */
 
+@media only screen and (max-width: 550px) {
+    .main-container {
+        width: 100%;
+        margin: 0;
+        padding: 0 .5%;
+    }
+
+    header {
+        display: none;
+    }
+    
+    #empower {
+        width: 100%;
+        height: 50rem;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 3rem;
+    }
+
+    .empower-text {
+        width: 100%;
+        height: 20rem;
+        padding: 2rem 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
+    .empower-h1 {
+        font-size: 1.25rem;
+        text-align: center;
+        padding: 0;
+        width: 90%;
+    }
+
+    .empower-p {
+        width: 95%;
+        font-size: 1rem;
+        font-weight: 400;
+        text-align: center;
+        word-spacing: 0.2rem;
+    }
+
+    .empower-btn {
+        width: 75%;
+        justify-self: center;
+        margin-bottom: 2rem;
+        display: flex;
+        align-items: center;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+        
+    }
+
+    .get-touch {
+        padding: 15px 25px;
+        font-size: 1rem;
+    }
+
+    .see-work {
+        font-size: 1rem;
+    }
+
+    .empower-imgs {
+        position: unset;
+        width: 100%;
+        height: 30rem;
+        display: flex;
+        justify-content: center;
+        margin: 0 2%;
+    }
+
+    .empower-img1 {
+        display: none;
+    }
+
+    .empower-img2 {
+        display: flex;
+        justify-content: center;
+    }
+
+    .empower-img2 img {
+        width: 90%;
+        position: unset;
+        justify-self: center;
+        align-self: center;
+    }
+
+    .empower-img3 {
+        display: none;
+    }
+
+    #logos {
+        margin-top: 3rem;
+        margin-bottom: 7rem;
+        width: 80%;
+        display: grid;
+        height: 10rem;
+        padding: 4rem 0 4rem 4rem;
+        grid-template-columns: 200px 200px;
+        grid-template-rows: 150px 150px;
+        align-items: center;
+    }
+
+    .amazon {
+        display: none;
+    }
+
+    #projects {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 96rem;
+    }
+    
+    #projects h2 {
+        margin-bottom: 0;
+    }
+
+    .cards-container {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin-bottom: 7rem;
+    }
+
+    .card {
+        width: 100%;
+        margin-bottom: 3rem;
+    }
+
+    #clients {
+        height: 25rem;
+        width: 105%;
+        align-self: flex-end;
+    }
+
+    .elipse0 {
+        width: 25rem;
+        height: 25rem;
+        background-color: transparent;
+        border: 2px dashed #f4f6fc13;
+        border-radius: 50%;
+        position: absolute;
+        left: 4rem;
+        top: 0rem;
+        display: block;
+    }
+
+    .clients-text {
+        height: 20rem;
+        /* width: 80%; */
+        justify-self: center;
+
+    }
+
+    .clients-title {
+        width: 80%;
+    }
+
+    .clients-text h2 {
+        font-size: 2rem;
+        text-align: center;
+        align-self: center;
+        
+    }
+
+    .clients-p {
+        width: 80%;
+    }
+
+    .clients-p p {
+        font-size: 1.45rem;
+        padding-bottom: 2rem;
+    }
+
+    .emote {
+        display: none;
+    }
+
+    .elipse1 {
+        display: none;
+    }
+
+    .elipse2 {
+        display: none;
+    }
+
+    .elipse3 {
+        display: none;
+    }
+
+    #services {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 75rem;
+        margin-bottom: 12rem;
+    }
+
+    .services-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+    }
+
+    .services-card {
+        width: 90%;
+        margin-bottom: 3rem;
+    }
+
+    #questions {
+        height: 25rem;
+        width: 105%;
+        align-self: flex-end;
+
+    }
+
+    .questions-text {
+        width: 80%;
+    }
+
+    .questions-text h2 {
+        font-size: 2rem;
+    }
+
+    .questions-form {
+        width: 100%;
+    }
+
+    .questions-form form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .input-background {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin: 2rem;
+        width: 60%;
+        height: 5rem;
+    }
+
+    .email-input {
+        align-self: center;
+        width: 10rem;
+    }
+
+    .input-background img {
+        justify-self: flex-start;
+    }
+
+    .submit-input {
+        padding: 2rem 10rem;
+        width: 100%;
+        font-size: 1rem;
+    }
+
+    footer {
+        height: 15rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .footer-info {
+        align-items: center;
+    }
+
+    .footer-info address {
+        text-align: center;
+    }
+
+    .footer-links {
+        width: 80%;
+        justify-content: space-between;
+    }
+
+    .link-set {
+        width: 80%;
+    }
+    
+    .link-set a {
+        text-align: center;
+        font-size: 1rem;
+    }
+
+    #contact-form {
+        margin-bottom: 4rem;
+        padding: 0 1rem 0 1rem;
+    }
+
+    .contact-title {
+        font-size: 1.7rem;
+        margin-bottom: 1rem;
+        width: 90%;
+    }
+
+    #contact-form label {
+        font-size: 1.2rem;
+    }
+
+    .mail-phone {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .email-form {
+        width: 100%;
+    }
+
+    .phone-form {
+        width: 100%;
+    }
+
+    #big-project {
+        margin: 4rem 1.5rem;
+        height: 90rem;
+    }
+
+    #big-project h1 {
+        font-size: 2.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .project-info {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .project-info h2 {
+        font-size: 1.3rem;
+        margin: 0%;
+    }
+
+    .project-info p {
+        font-size: 1.3rem;
+        margin: 0;
+    }
+
+    .big-img {
+        margin-bottom: 0;
+        height: 24rem;
+        margin-bottom: 4rem;
+    }
+
+    .big-img img{
+        height: 24rem;
+    }
+
+    .project-text {
+        margin-bottom: 4rem;
+    }
+}

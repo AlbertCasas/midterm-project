@@ -10,19 +10,23 @@
 <body>
     <div class="main-container">
         <header>
-            <div>
+            <nav class="nav-bar">
                 <a href="index.html"><img src="https://uploads-ssl.webflow.com/61f7ff5634c23c5bef9d2e54/61f800b7cb56a839fd8ed026_Circle.svg" alt="logo"></a>
-            </div>
-            <nav>
-                <ul class="nav-ul">
+                <ul class="nav-menu">
                     <li><a class="home" href="index.html">Home</a></li>
-                    <li><a class="no-home" href="#">Projects</a></li>
-                    <li><a class="no-home" href="#">Services</a></li>
+                    <li><a class="no-home" href="#projects">Projects</a></li>
+                    <li><a class="no-home" href="#services">Services</a></li>
                 </ul>
+                <a class="contact-us" href="contact.html">Contact Us</a>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
             </nav>
-            <div class="contact-us">
-                <a href="contact.html">Contact Us</a>
-            </div>
+            
+            
+            
         </header>
         <section id="contact-form">
             <div class="contact-title">
@@ -81,5 +85,7 @@
             </div>
         </footer>
     </div>
+
+    <script src="../javascript/hamburger.js"></script> 
 </body>
 </html>

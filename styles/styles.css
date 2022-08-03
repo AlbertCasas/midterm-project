@@ -7,37 +7,43 @@ html {
     font-weight: 500;
 }
 
+body {
+    margin: 0%;
+}
+
 .main-container {
     display: flex;
     flex-direction: column;
     padding: 0 20%;
 }
 
-header {
-    height: 11rem;
+
+
+.nav-bar {
+    height: 10rem;
     margin-bottom: 3rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.nav-ul {
+.nav-menu {
     display: flex;
     justify-content: space-between;
     
 }
 
-.nav-ul li {
+.nav-menu li {
     padding: 0 1rem;
     list-style-type: none;
 }
 
-.nav-ul a {
+.nav-menu a {
     text-decoration: none;
     font-weight: 700
 }
 
-.nav-ul a:hover {
+.nav-menu a:hover {
     color: #072AC8;
 }
 
@@ -61,10 +67,25 @@ header {
     background-color: #292E47;
 }
 
-.contact-us a {
+.contact-us {
     text-decoration: none;
     color: white;
     font-weight: 700;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 23px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #292E47
 }
 
 #empower {
@@ -166,7 +187,7 @@ header {
 .card {
     background-color: white;
     width: 340px;
-    height: 440px;
+    height: 600px;
 }
 
 .card img {
@@ -179,12 +200,27 @@ header {
     display: flex;
     flex-direction: column;
     align-content: space-between;
+    height: 330px;
+}
+
+.card-title {
+    height: 7rem;
+    margin-bottom: 2rem;
 }
 
 .card-text h3 {
     font-size: 1.5rem;
     font-weight: 500;
     color: #292E47;
+}
+
+.card-body {
+    height: 9rem;
+    margin-bottom: 2rem;
+}
+
+.card-link {
+    height: 4rem;
 }
 
 .card-text p {
@@ -295,6 +331,7 @@ header {
     left: 20rem;
     top: -1rem;
     display: none;
+    z-index: -1;
 }
 
 .elipse1 {
@@ -306,6 +343,7 @@ header {
     position: absolute;
     left: 20rem;
     top: -1rem;
+    overflow: hidden;
 }
 
 .elipse2 {
@@ -317,7 +355,7 @@ header {
     position: absolute;
     left: 13rem;
     top: -9rem;
-    
+    overflow: hidden;
 }
 
 .elipse3 {
@@ -650,8 +688,8 @@ footer {
     filter: saturate(200%) blur(3rem);
 }
 
-.project-text {
-    height: 20rem;
+.projext-text {
+    height: 10rem;
     margin-bottom: 5rem;
 }
 
@@ -664,14 +702,75 @@ footer {
 /* Media querys */
 
 @media only screen and (max-width: 550px) {
-    .main-container {
-        width: 100%;
+    
+    html {
         margin: 0;
-        padding: 0 .5%;
+        padding: 0;
     }
 
     header {
+        height: 4rem;
+        z-index: 100;
+    }
+
+    
+    .nav-bar {
+        padding: 0 40px 0 40px;
+        height: 4rem;
+    }
+    
+    .main-container {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .contact-us {
         display: none;
+    }
+
+    .hamburger {
+        display: block;
+        padding: 1rem;
+    }
+
+    .hamburger.active {
+        background-color: #c8c8c8;
+    }
+
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-menu {
+        position: fixed;
+        left: -10px;
+        top: -180px;
+        gap: 10;
+        flex-direction: column;
+        justify-content: space-around;
+        background-color: #c8c8c8;
+        width: 100%;
+        text-align: left;
+        transition: 0.3s;
+        height: 10rem;
+        z-index: -1;
+    }
+
+    .nav-item {
+        margin: 16px 0;
+    }
+
+    .nav-menu.active {
+        top: 37px;
     }
     
     #empower {
@@ -680,7 +779,7 @@ footer {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        margin-top: 3rem;
+        margin-top: 1rem;
     }
 
     .empower-text {
@@ -778,7 +877,7 @@ footer {
         display: flex;
         flex-direction: column;
         align-items: center;
-        height: 96rem;
+        height: 120rem;
     }
     
     #projects h2 {
@@ -793,14 +892,16 @@ footer {
     }
 
     .card {
-        width: 100%;
+        width: 90%;
         margin-bottom: 3rem;
     }
 
+    
+
     #clients {
         height: 25rem;
-        width: 105%;
-        align-self: flex-end;
+        width: 100%;
+        overflow: hidden;
     }
 
     .elipse0 {
@@ -880,8 +981,7 @@ footer {
 
     #questions {
         height: 25rem;
-        width: 105%;
-        align-self: flex-end;
+        width: 100%;
 
     }
 
@@ -894,7 +994,7 @@ footer {
     }
 
     .questions-form {
-        width: 100%;
+        width: 80%;
     }
 
     .questions-form form {
@@ -987,7 +1087,7 @@ footer {
 
     #big-project {
         margin: 4rem 1.5rem;
-        height: 90rem;
+        height: 60rem;
     }
 
     #big-project h1 {
@@ -1021,6 +1121,7 @@ footer {
     }
 
     .project-text {
+
         margin-bottom: 4rem;
     }
 }

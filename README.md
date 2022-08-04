@@ -8,6 +8,6 @@ The project consisted in cloning the "main page", the "contact us" page and the 
 
 The technologies used to make this website are:
 
-*HTML
-*CSS
-*JavaScript
+-HTML
+-CSS
+-JavaScript

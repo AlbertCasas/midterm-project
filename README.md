@@ -4,7 +4,7 @@ This is the first project done in Frontend IronHack Bootcamp after the first two
 
 The project consisted in cloning the "main page", the "contact us" page and the "project page" and making it responsive for mobiles and desktop. Also we had to import the projects section information from a fake API.
 
-##Technologies
+## Technologies
 
 The technologies used to make this website are:
 

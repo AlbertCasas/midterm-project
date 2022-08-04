@@ -367,7 +367,7 @@ body {
     position: absolute;
     left: 5.5rem;
     top: -16rem;
-    
+    z-index: -1;
 } 
 
 #services {
@@ -427,6 +427,7 @@ body {
 .questions-text h2 {
     font-size: 2.5rem;
     color: #292E47;
+    text-align: center;
 }
 
 .questions-text p {
@@ -889,6 +890,7 @@ footer {
         flex-direction: column;
         width: 90%;
         margin-bottom: 7rem;
+        align-items: center;
     }
 
     .card {
@@ -990,7 +992,7 @@ footer {
     }
 
     .questions-text h2 {
-        font-size: 2rem;
+        font-size: 1.7rem;
     }
 
     .questions-form {
@@ -1008,7 +1010,7 @@ footer {
         justify-content: flex-start;
         align-items: center;
         margin: 2rem;
-        width: 60%;
+        width: 90%;
         height: 5rem;
     }
 

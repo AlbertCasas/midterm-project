@@ -1,9 +1,6 @@
-console.log("activado")
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
-console.log("linea 36")
 hamburger.addEventListener("click", () => {
-    console.log("Hola")
     hamburger.classList.toggle("active");
     navMenu.classList.toggle("active");
 })

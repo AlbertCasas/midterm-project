@@ -8,7 +8,7 @@ function getProject() {
         apiData += `
         <div class="card">
             <div class="card-img">
-            <img src="https://picsum.photos/200/300" alt="simplify">
+            <img src=“../img/${project.id}.jpg” alt=“Information about ${project.title}“>
             </div>
             <div class="card-text">
                 <div class="card-title">

@@ -634,6 +634,15 @@ footer {
     flex-direction: column;
 }
 
+.form-sent {
+    display: none;
+    text-align: center;
+    margin-top: 1rem;
+    background-color: green;
+    font-size: 1.3rem;
+    color: white;
+}
+
 /* Projects Page */
 
 #big-project h1{

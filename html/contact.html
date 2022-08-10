@@ -33,7 +33,7 @@
                 <h1>Contact Us</h1>
             </div>
             <div>
-                <form method="get">
+                <form method="get" id="form">
                     <div class="full-name-form">
                         <label for="name" aria-required="true">Full Name *</label>
                         <input type="text" placeholder="Enter your full name" id="name" name="name">
@@ -52,8 +52,11 @@
                         <label for="message" aria-required="true">Message *</label>
                         <textarea name="message" id="message" cols="30" rows="10" placeholder="Write your message here..."></textarea>
                     </div>
-                    <button>Submit</button>
+                    <button id="submit-btn">Submit</button>
                 </form>
+                <div class="form-sent">
+                    <h4>Form sent successfully</h4>
+                </div>
             </div>
         </section>
         <footer>
@@ -87,5 +90,6 @@
     </div>
 
     <script src="../javascript/hamburger.js"></script> 
+    <script src="../javascript/contact.js"></script>
 </body>
 </html>
